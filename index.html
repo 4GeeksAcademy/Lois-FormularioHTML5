@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO BOOTSTRAP</title>
+    <link rel="stylesheet" href="3ejercicioFormulario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- links copiados de  Bootstrap 5 para poder copiar y pegar codigo -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="formulario">
+        <div class="pay">
+            <h1>Formulario de Pago</h1>
+        </div>
+        <div class="mensaje mb-4">
+                <p>Faltan algunos campos</p>
+            </div>
+            <div class="Pago">
+                <div class="row g-3 mt-3 mb-1">  <!-- mb-4 Aumentar el espacio inferior entre filas y mt-4 aumentar espacio superior  -->
+                    <div class="col-5">
+                        <label for="card-number">Número de tarjeta #</label> 
+                        <input type="text" class="form-control" placeholder="xxxxxxxxxxxxx" aria-label="City">
+                    </div>
+                    <div class="col-3">
+                        <label for="cvc">CVC #</label>
+                        <input type="text" class="form-control" placeholder="0000" aria-label="State">
+                    </div>
+                    <div class="col-4">
+                        <label for="amount">Cantidad:</label>
+                        <div class="dollar">
+                            <i class="ri-money-dollar-circle-line"></i><input type="text" class="form-control" placeholder="amount" aria-label="Zip">
+                        </div>
+                    </div>
+                  </div>
+                <fieldset> 
+                    <div class="izquierda">
+                        <div class="row g-3 mt-1 mb-1">
+                            <div class="col">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <label for="apellidos">Apellidos:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="row g-3 mt-1 mb-1">
+                            <div class="col-6">
+                                <label for="ciudad">Ciudad:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="First name">
+                            </div>
+                            <div class="col-3">
+                                <label for="Pais">Pais:</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Elige País</option>
+                                    <option>España</option>
+                                    <option>Argentina</option>
+                                </select>    
+                            </div>
+                            <div class="col-3">
+                                <label for="codigo">Código Postal:</label>
+                                <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                              </div>
+                          </div>
+                    </div>
+                    <div class="pagosms">
+                        <div class="row g-3 mt-1 mb-2">
+                            <div class="col">
+                                <label for="mpago">Método de Pago:</label>
+                                <div class="iconospago">
+                                    <input type="radio" name="pago" value="paypall" checked><i class="ri-paypal-line"></i><br>
+                                    <input type="radio" name="pago" value="mastercard"><i class="ri-mastercard-fill"></i><br>
+                                    <input type="radio" name="pago" value="other"><i class="ri-visa-line"></i><br>
+                                    <input type="radio" name="pago" value="other"><i class="ri-bit-coin-fill"></i><br>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="sms">Mensaje:</label>
+                                <textarea name="Escribe" id="mensaje" class="form-control" cols="60" rows="4"> </textarea>
+                                <p>Agregue cualquier nota aquí.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="envío">
+                        <button type="button" class="btn btn-primary enviar">Enviar</button>
+                        <button type="button" class="btn btn-secondary cancelar" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </fieldset> <!-- informacion de misma clase  -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
